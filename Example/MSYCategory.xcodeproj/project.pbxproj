@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		19A1D127772880A0535B8421 /* MSYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSYCategory.podspec; path = ../MSYCategory.podspec; sourceTree = "<group>"; };
+		19A1D127772880A0535B8421 /* MSYCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSYCategory.podspec; path = ../MSYCategory.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E650BD5B7B09DD14FE0589D /* Pods_MSYCategory_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSYCategory_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MSYCategory_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSYCategory_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,8 +65,8 @@
 		8B67353F97DE5C6F2AD1E0DA /* Pods_MSYCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSYCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4167EDEAF4108696C99EB71 /* Pods-MSYCategory_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSYCategory_Example.release.xcconfig"; path = "Target Support Files/Pods-MSYCategory_Example/Pods-MSYCategory_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C0F2695781C3D3FDC78AE0B3 /* Pods-MSYCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSYCategory_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MSYCategory_Tests/Pods-MSYCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D634A2E3914C84C5C8E2A2DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FB42379277EA0465599A8FC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D634A2E3914C84C5C8E2A2DE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FB42379277EA0465599A8FC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				C0F2695781C3D3FDC78AE0B3 /* Pods-MSYCategory_Tests.debug.xcconfig */,
 				7BECE1A13618ECF16851CAC7 /* Pods-MSYCategory_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MSYCategory_Example/Pods-MSYCategory_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MSYCategory/MSYCategory.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSYCategory.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

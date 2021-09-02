@@ -1,0 +1,27 @@
+{
+  "name": "MSYCategory",
+  "version": "0.1.0",
+  "summary": "A short description of MSYCategory.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SimonMiao/MSYCategory",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SimonMiao": "2278046701@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/SimonMiao/MSYCategory.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MSYCategory/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+      "~> 1.2.0"
+    ]
+  }
+}

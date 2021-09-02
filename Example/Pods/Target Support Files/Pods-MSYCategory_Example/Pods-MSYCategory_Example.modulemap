@@ -1,0 +1,6 @@
+framework module Pods_MSYCategory_Example {
+  umbrella header "Pods-MSYCategory_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
