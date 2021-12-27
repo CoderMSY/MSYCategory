@@ -1,6 +1,10 @@
 PODS:
   - MBProgressHUD (1.2.0)
-  - MSYCategory (0.1.0):
+  - MSYCategory (0.1.1):
+    - MSYCategory/Category (= 0.1.1)
+    - MSYCategory/ProgressHUD (= 0.1.1)
+  - MSYCategory/Category (0.1.1)
+  - MSYCategory/ProgressHUD (0.1.1):
     - MBProgressHUD (~> 1.2.0)
 
 DEPENDENCIES:
@@ -16,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MSYCategory: a0e68da6b937fb769cc29ded23a2e6abc87b1de3
+  MSYCategory: 3f951fb3cd617501b10bc9597a9b88355da9a325
 
 PODFILE CHECKSUM: 8e2c937a77e3769a1f58f0820e572126e07c9edd
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

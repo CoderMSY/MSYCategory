@@ -17,8 +17,8 @@
 #import "UIImage+MSYBundle.h"
 #import "UILabel+MSYHelper.h"
 #import "UIView+MSYHelper.h"
-#import "UIView+MSYLoading.h"
 #import "UIViewController+MSYHelper.h"
+#import "UIView+MSYLoading.h"
 
 FOUNDATION_EXPORT double MSYCategoryVersionNumber;
 FOUNDATION_EXPORT const unsigned char MSYCategoryVersionString[];

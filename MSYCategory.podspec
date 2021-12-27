@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSYCategory'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of MSYCategory.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MSYCategory/Classes/**/*'
+#  s.source_files = 'MSYCategory/Classes/**/*'
+  s.subspec 'Category' do |category|
+      category.source_files = 'MSYCategory/Classes/Category/**/*'
+      end
+  s.subspec 'ProgressHUD' do |progressHUD|
+      progressHUD.source_files = 'MSYCategory/Classes/ProgressHUD/**/*'
+      progressHUD.dependency 'MBProgressHUD', '~> 1.2.0'
+      end
   
   # s.resource_bundles = {
   #   'MSYCategory' => ['MSYCategory/Assets/*.png']
@@ -39,6 +46,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.dependency 'MBProgressHUD', '~> 1.2.0'
+#  s.dependency 'MBProgressHUD', '~> 1.2.0'
   
 end
